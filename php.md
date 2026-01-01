@@ -100,3 +100,22 @@ HTML can be used in echo statement.
 ```php
 <?php echo "<p>In this course, you will learn the fundamentals of the PHP language</p>" ?>
 ```
+
+<br>
+
+## VARIABLES
+
+- `$` prefix
+- start: LETTER, _underscore
+- can't start with a 123345
+- can only contain _LETTERS11231231_
+- case sensitive `$name` ≠ `$Name`
+
+### Naming conventions
+
+Naming conventions
+
+    $server_name // how internal PHP functions and variables are written
+    $serverName  //
+    $ServerName  // common for classes
+    $servername  // rare, data base parameters
