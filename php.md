@@ -58,3 +58,45 @@ php -S localhost:8000
 ```
 
 4. Stop the server: `control C`
+
+## PHP TAGS
+
+```php
+<?php
+
+?>
+```
+
+Usually, `*.html` and `*.php` files are separate.
+In that case, omit the closing PHP tag.
+
+
+### Ways to print PHP in browser using language constructs/statements:
+
+- `echo`
+- `print`
+
+```php
+<?php
+  echo "Hello from ECHO!", "It can have multiple values";
+  echo "<br>";
+  print "Hello from PRINT";
+```
+
+### Writing PHP and HTML together
+
+This will output the text and in the source code HTML, no PHP code will be shown in the browser because it is executed on the server.
+The server sends to the browsers what it interprets.
+
+
+- local code: `<title><?php echo "Learn PHP From Scratch"; ?></title>`
+
+- browser source code: `<title>Learn PHP From Scratch</title>`
+
+- Shorthand (usually used with variable): `<title><?= "Learn PHP From Scratch" ?></title>`
+
+HTML can be used in echo statement.
+
+```php
+<?php echo "<p>In this course, you will learn the fundamentals of the PHP language</p>" ?>
+```
