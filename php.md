@@ -113,9 +113,21 @@ HTML can be used in echo statement.
 
 ### Naming conventions
 
-Naming conventions
-
     $server_name // how internal PHP functions and variables are written
     $serverName  //
     $ServerName  // common for classes
     $servername  // rare, data base parameters
+
+<br>
+
+### Using variables
+
+```php
+<?php
+// VARIABLE
+$title = "Learn PHP from scratch";
+?>
+
+// use in HTML
+<title><?= $title; ?></title>
+```
