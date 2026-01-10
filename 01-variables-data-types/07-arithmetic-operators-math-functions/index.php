@@ -73,11 +73,6 @@
   $output = number_format(1234567.891234); // 1,234,568
   $output = number_format(1234567.891234, 2, ".", ","); // 1,234,567.89
 
-
-
-
-
-
 ?>
 
 <!DOCTYPE html>
