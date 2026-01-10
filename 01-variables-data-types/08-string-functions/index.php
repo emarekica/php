@@ -1,5 +1,48 @@
 <?php
 $output = null;
+$string = "Hello world";
+
+// strlen()
+// string length
+$output = strlen($string); // 12
+
+// str_word_count()
+// how many words in a string
+$output = str_word_count($string); // 2
+
+// strpos()
+// index of a word in a string
+// 2 arguments: string, substring who's index we are searching for
+$output = strpos($string, "world"); // 7
+
+// Get specific character by index
+$output = $string[3]; // l
+
+// substr()
+// pass in an index to get the substring on that position
+// string, starting index, length
+// ✅ usage: plucking words out of a string
+$output = substr($string, 6, 5); // world
+
+// str_replace()
+// substring you are looking for, what you are replacing with, string
+$output = str_replace("world", "universe", $string); // Hello universe
+
+// strtolower()
+$output = strtolower($string); // hello world
+
+// strtoupper()
+$output = strtoupper($string); // HELLO WORLD
+
+// ucwords()
+// only the first characters in uppercase
+$output = ucwords($string); // Hello World
+
+// trim()
+// removes extra spaces
+$output = trim("     Hello, world      ");
+
+
 ?>
 
 <!DOCTYPE html>
