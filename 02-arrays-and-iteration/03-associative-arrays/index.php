@@ -1,5 +1,28 @@
 <?php
 $output = null;
+
+// Associative array
+$user = [
+  "name" => "John",
+  "email" => "my@mail.com",
+  "fauxPass" => "****",
+  "hobbies" => ["cooking", "fishing"],
+];
+
+// echo $user; // error
+var_dump($user);
+
+// Access element
+$output = $user["name"];
+
+// Access nested elements
+$output = $user["hobbies"][0]; // cooking
+
+// Add a new element
+$user["address"] = "123 Main street";
+
+// Remove an element
+unset($user["fauxPass"]);
 ?>
 
 <!DOCTYPE html>
@@ -22,6 +45,13 @@ $output = null;
         <div class="bg-white rounded-lg shadow-md p-6 mt-6">
             <!-- Output -->
             <p class="text-xl"><?= $output ?></p>
+
+            <h2 class="text-xl font-semibold my-4">Userrray:</h2>
+            <p>
+            <pre>
+                <?php print_r($user); ?>
+              </pre>
+            </p>
         </div>
     </div>
 </body>
