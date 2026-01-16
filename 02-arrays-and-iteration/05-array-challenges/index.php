@@ -30,11 +30,36 @@ You should end up with the following array: ['yellow', 'pink', 'blue', 'red', 'p
 echo '<h3>Colors Array</h3>';
 
 $colors = ['red', 'blue', 'green', 'yellow'];
-rsort($colors);
-array_push($colors, 'orange', 'pink');
+$additionalColors = ['purple', 'orange'];
 
-print_r($colors);
+// 1.
+// ❌ rsort() sorts an array by value in descending order; good for numbers
+// ✅ array_reverse() flips the order of elements as they currently exist
 
+// ❌ array_reverse($colors); // does nothing because it returns a new array
+// ✅ $colors = array_reverse($colors); // reassigns the result
+
+$colors = array_reverse($colors);
+
+// 2.
+$colors = array_merge($colors, $additionalColors);
+
+// 3.
+
+// $colors → the array we are modifying
+// $index → the position of "green"
+// 1 → remove 1 element (just "green")
+// ['pink'] → insert "pink" in its place
+
+// ❗️ no need for reassigning the result because it mutates the existing array
+array_splice($colors, 1, 1, 'pink');
+
+// 4.
+
+array_pop($colors);
+
+// Result:
+print_r($colors); // ['yellow', 'pink', 'blue', 'red', 'purple']
 
 
 /*

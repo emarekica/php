@@ -528,6 +528,12 @@ inspect($numbers);
 
 - [documentation](https://www.php.net/manual/en/ref.array.php)
 
+Functions that mutate arrays: `sort()`, `rsort()`, `asort()`
+
+Functions that return transformed copies: `array_reverse()`, `array_map()`, `array_filter()`
+
+<br>
+
 ```php
 $output = null;
 
@@ -570,7 +576,7 @@ array_unshift($users, "user0");
 
 // array_splice()
 // remove a portion of the array and replace it with something else
-// array - offset - length
+// array - offset - length - replacement
 // array_splice($ids, 1, 1, 'New ID');
 array_splice($users, 0, 1, 'New User');
 
