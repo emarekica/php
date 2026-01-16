@@ -42,7 +42,6 @@ $output = ucwords($string); // Hello World
 // removes extra spaces
 $output = trim("     Hello, world      ");
 
-
 ?>
 
 <!DOCTYPE html>

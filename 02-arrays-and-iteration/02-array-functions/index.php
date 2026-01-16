@@ -41,6 +41,7 @@ array_unshift($ids, 200);
 array_unshift($users, "user0");
 
 // array_splice()
+// remove a portion of the array and replace it with something else
 // array - offset - length
 // array_splice($ids, 1, 1, 'New ID');
 array_splice($users, 0, 1, 'New User');
@@ -49,6 +50,7 @@ array_splice($users, 0, 1, 'New User');
 // RETURNS NEW ARRAY
 
 // array_slice()
+// extract a slice of the array
 // array -index where you start the slice - length of slice
 $ids2 = array_slice($ids, 2, 3);
 // var_dump($ids2);
@@ -78,7 +80,6 @@ $tagsArr = explode(',', $tags);
 // ARRAY >> string
 // implode()
 $output = implode(', ', $users); // New User, user2, user1, user3
-
 
 ?>
 
